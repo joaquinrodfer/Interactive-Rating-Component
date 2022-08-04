@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <main>
+    <div id="rating" class="div rating" data-submitted="false">
+      <img class="img star" src="images/icon-star.svg" alt="Star">
+      <h1 class="h1">How did we do?</h1>
+      <p class="p">Please let us know how we did with your support request. All feedback is appreciated to help us
+        improve our offering!</p>
+      <form class="form rating" action="index.html">
+        <div class="div buttons">
+          <input class="input rating score" type="radio" id="1" name="rating" value="1">
+          <label class="label" for="1">1</label>
+          <input class="input rating score" type="radio" id="2" name="rating" value="2">
+          <label class="label" for="2">2</label>
+          <input class="input rating score" type="radio" id="3" name="rating" value="3">
+          <label class="label" for="3">3</label>
+          <input class="input rating score" type="radio" id="4" name="rating" value="4">
+          <label class="label" for="4">4</label>
+          <input class="input rating score" type="radio" id="5" name="rating" value="5">
+          <label class="label" for="5">5</label>
+        </div>
+        <input id="submit" type="submit" value="SUBMIT">
+      </form>
+    </div>
+    <!-- Thank you state -->
+    <div id="thank-you" class="div thank-you">
+      <img src="images/illustration-thank-you.svg" alt="Mobile illustration" class="img illustration">
+      <div id="score" class="div score"></div>
+      <h2 class="h2 thank-you">Thank you!</h2>
+      <p class="p">We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!</p>
+    </div>
+    <!-- Thank you state end -->
+    <script src="js/main.js"></script>
+  </main>
+</body>
+
+</html>

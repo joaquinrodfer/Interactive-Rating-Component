@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+}
+
+main{
+    background: hsl(213, 19%, 18%);
+    max-width: 340px;
+    border-radius: 15px;
+}
+
+h1, h2{
+    color: white;
+    font-size: 25px;
+}
+
+p{
+    color: hsl(216, 12%, 54%);
+    font-size: 15px;
+}
+
+/* Div Rating */
+
+.div.rating{
+    padding: 22px;
+    display: block;
+}
+
+.div.rating .img.star{
+    background: hsl(213, 19%, 23%);
+
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.form.rating{
+    display: flex;
+    flex-direction: column;
+}
+
+.form.rating .div.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form.rating .div.buttons .input.rating.score{
+    display: none;
+}
+
+.form.rating .div.buttons label{
+    display: flex;
+    font-size: 15px;
+    color:hsl(216, 12%, 54%);
+    background: hsl(213, 19%, 23%);
+    cursor: pointer;
+    width:40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.form.rating .div.buttons label:hover{
+    background: hsl(217, 12%, 63%);
+    color: white;
+    transition: 0.3s, color 0.3s;
+}
+
+.form.rating .div.buttons .input.rating.score:checked + label{
+    background-color: orange;
+}
+
+#submit{
+    font-size: 15px;
+    background: hsl(25, 97%, 53%);
+    color: white;
+    border: none;
+    width: 90%;
+    height: 45px;
+    margin-top: 25px;
+    align-self: center;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#submit:hover{
+    background:white;
+    color: hsl(25, 97%, 53%);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Thank you state */
+
+.div.thank-you {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 1rem;
+}
+.div.thank-you img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.div.thank-you .div.score {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 19%, 23%);
+    padding: 8px 10px;
+    border-radius: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.div.thank-you .h2 {
+    margin-bottom: 4px;
+}
+
+.div.thank-you .p {
+    margin-top: 8px;
+}
